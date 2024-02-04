@@ -14,6 +14,8 @@ enum class TokenType {
 
     ON,
     COMMAND,
+    IMPL,
+    GUI,
 
     IF,
 
@@ -23,5 +25,14 @@ enum class TokenType {
 
     STRING,
     NUMBER,
-    DECIMAL
+    DECIMAL,
+
+    COMMA,
+
+    COLON,
+
+    PLUS,
+    MINUS,
+    SLASH,
+    STAR
 }

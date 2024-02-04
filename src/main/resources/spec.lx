@@ -12,3 +12,7 @@ gui "name gui":
         name: "Count: $count"
         on click:
             set $count to $count + 1
+
+// plugin exposed api
+impl Corpse->onDeath:
+    send "New death on the scene" to $player
