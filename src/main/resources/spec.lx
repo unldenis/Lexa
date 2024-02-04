@@ -15,6 +15,8 @@ command /gui:
 
 // plugin exposed api
 impl Corpse:
-    -> onDeath:
+    onDeath:
         send "New death on the scene" to $player
-    $count -> pluginData
+    pluginData:
+
+        return $count
