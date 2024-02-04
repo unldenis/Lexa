@@ -1,0 +1,12 @@
+on plugin enable:
+    if $count is not set:
+        set $count to 0
+    log "Plugin loaded"
+
+
+command /increment:
+    set $count to $count + 1
+
+command /count:
+    send "&eCount: &a$count" to $sender
+
