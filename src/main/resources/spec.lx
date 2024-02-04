@@ -5,13 +5,13 @@ on plugin enable:
 
 command /gui:
     open gui "name gui" to $player
+        on 1, 4:
+            item: apple
+            name: "Count: $count"
+            on click:
+                set $count to $count + 1
 
-gui "name gui":
-    on 1, 4:
-        item: apple
-        name: "Count: $count"
-        on click:
-            set $count to $count + 1
+
 
 // plugin exposed api
 impl Corpse:
