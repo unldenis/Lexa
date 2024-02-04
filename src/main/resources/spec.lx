@@ -1,0 +1,14 @@
+on plugin enable:
+    if $count is not set:
+        set $count to 0
+    log "Plugin loaded"
+
+command /gui:
+    open gui "name gui" to $player
+
+gui "name gui":
+    on 1, 4:
+        item: apple
+        name: "Count: $count"
+        on click:
+            set $count to $count + 1
